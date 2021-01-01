@@ -1,0 +1,69 @@
+{
+    "name": "tadpole",
+    "displayName": "蝌蚪池塘",
+    "description": "化身为蝌蚪，和水友们实时聊天，一起摸鱼，非常有趣",
+    "version": "1.0.0",
+    "icon": "resources/icon.png",
+    "publisher": "ezshine",
+    "repository": {
+        "url": "https://github.com/ezshine/vscode-tadpole"
+    },
+    "categories": [
+		"Other"
+    ],
+    "license": "GPL",
+	"keywords": ["tadpole","chat","tinder","vsinder","蝌蚪","池塘","摸鱼"],
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+    "activationEvents": [
+        "onView:tadpole_setting"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            
+        ],
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "tadpole",
+                    "title": "tadpole",
+                    "icon": "resources/icon_juejin.svg"
+                }
+            ]
+        },
+        "views": {
+            "tadpole": [
+                {
+                    "id": "tadpole_setting",
+                    "name": "功能"
+                }
+            ]
+        },
+        "menus":{
+            "view/title": [
+                
+            ]
+        }
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "yarn run lint",
+        "test": "node ./test/runTest.js"
+    },
+    "devDependencies": {
+        "@types/glob": "^7.1.3",
+        "@types/mocha": "^8.0.0",
+        "@types/node": "^14.0.27",
+        "@types/vscode": "^1.35.0",
+        "eslint": "^7.6.0",
+        "glob": "^7.1.6",
+        "mocha": "^8.0.1",
+        "typescript": "^3.8.3",
+        "vscode-test": "^1.4.0"
+    },
+    "dependencies": {
+        "axios": "^0.21.1"
+    }
+}
