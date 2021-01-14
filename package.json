@@ -2,7 +2,7 @@
     "name": "tadpole",
     "displayName": "蝌蚪池塘",
     "description": "化身为蝌蚪，和水友们实时聊天，一起摸鱼，非常有趣",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon": "resources/icon.png",
     "publisher": "ezshine",
     "repository": {
